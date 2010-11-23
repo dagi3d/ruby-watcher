@@ -3,6 +3,7 @@ source "http://rubygems.org"
 gem 'couchrest', :require => 'couchrest'
 gem 'eventmachine'
 gem 'awesome_print', :require => 'ap'
+gem 'rack'
 
 group :test do
   gem 'rspec'

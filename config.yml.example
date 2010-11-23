@@ -5,3 +5,6 @@ capture:
   tmp_file: /tmp/foo.jpg
   command: isightcapture /tmp/foo.jpg
   time: 10
+web:
+  username: admin
+  password: 1234  
