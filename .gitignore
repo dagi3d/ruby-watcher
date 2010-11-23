@@ -3,3 +3,4 @@
 config.yml
 server/tmp/**
 server/log/**
+passenger.*
