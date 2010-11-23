@@ -1,0 +1,7 @@
+db:
+  host: localhost:5984  
+  database: ruby-watcher
+capture:
+  tmp_file: /tmp/foo.jpg
+  command: isightcapture /tmp/foo.jpg
+  time: 10

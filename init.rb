@@ -1,8 +1,11 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'couchrest/document'
-require 'couchrest/response'
+# TODO: refactor this
+require File.join(File.dirname(__FILE__), '/lib/watcher/config')
+require File.join(File.dirname(__FILE__), '/lib/watcher/database')
+require File.join(File.dirname(__FILE__), '/lib/watcher/command')
+require File.join(File.dirname(__FILE__), '/lib/watcher/capture')
+require File.join(File.dirname(__FILE__), '/lib/watcher/logger')
 
-require './lib/watcher/command'
-require './lib/watcher/capture'
+Watcher::Config.load(File.join(File.dirname(__FILE__), 'config.yml'))

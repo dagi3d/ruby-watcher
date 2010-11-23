@@ -1,9 +1,7 @@
 module Watcher
   class Command
-    def self.capture
-      file = '/tmp/foo.jpg'
-      output = `isightcapture #{file}`
-      file
+    def self.run
+      output = `#{Watcher::Config['capture']['command']}`
     end
   end
 end

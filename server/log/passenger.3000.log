@@ -1,0 +1,1647 @@
+2010/11/23 01:22:11 [error] 23530#0: *4 "/Users/dagi3d/www/ruby-watcher/server/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2010/11/23 01:22:12 [error] 23530#0: *4 "/Users/dagi3d/www/ruby-watcher/server/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2010/11/23 01:30:47 [error] 23549#0: *13 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=23713 thr=398660 file=utils.rb:176 time=2010-11-23 01:30:47.130 ]: *** Exception NoMethodError in application (undefined method `html' for #<Rack::Builder:0x766894 @ins=[#<Proc:0x7667cc@config.ru:1>]>) (process 23713, thread #<Thread:0x0c2a88>):
+	from config.ru:10:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+2010/11/23 01:31:12 [error] 23549#0: *13 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=23728 thr=398660 file=utils.rb:176 time=2010-11-23 01:31:12.038 ]: *** Exception NoMethodError in application (undefined method `out' for #<Rack::Builder:0x7679b0 @ins=[#<Proc:0x767910@config.ru:1>]>) (process 23728, thread #<Thread:0x0c2a88>):
+	from config.ru:10:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+2010/11/23 01:31:23 [error] 23549#0: *13 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=23733 thr=398660 file=utils.rb:176 time=2010-11-23 01:31:23.649 ]: *** Exception NoMethodError in application (undefined method `out' for #<Rack::Builder:0x7679b0 @ins=[#<Proc:0x767910@config.ru:1>]>) (process 23733, thread #<Thread:0x0c2a88>):
+	from config.ru:10:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+2010/11/23 01:31:49 [error] 23549#0: *13 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=23740 thr=398660 file=utils.rb:176 time=2010-11-23 01:31:49.307 ]: *** Exception NoMethodError in application (undefined method `out' for #<Rack::Builder:0x7679b0 @ins=[#<Proc:0x767910@config.ru:1>]>) (process 23740, thread #<Thread:0x0c2a88>):
+	from config.ru:10:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+2010/11/23 01:31:49 [error] 23549#0: *13 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=23742 thr=398660 file=utils.rb:176 time=2010-11-23 01:31:49.799 ]: *** Exception NoMethodError in application (undefined method `out' for #<Rack::Builder:0x7679b0 @ins=[#<Proc:0x767910@config.ru:1>]>) (process 23742, thread #<Thread:0x0c2a88>):
+	from config.ru:10:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+2010/11/23 01:31:50 [error] 23549#0: *13 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=23744 thr=398660 file=utils.rb:176 time=2010-11-23 01:31:50.200 ]: *** Exception NoMethodError in application (undefined method `out' for #<Rack::Builder:0x7679b0 @ins=[#<Proc:0x767910@config.ru:1>]>) (process 23744, thread #<Thread:0x0c2a88>):
+	from config.ru:10:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+{"CONTENT_LENGTH"=>"0", "DOCUMENT_ROOT"=>"/Users/dagi3d/www/ruby-watcher/server/public", "SCRIPT_NAME"=>"", "PATH_INFO"=>"/", "PASSENGER_USE_GLOBAL_QUEUE"=>"true", "PASSENGER_FRIENDLY_ERROR_PAGES"=>"true", "PASSENGER_ANALYTICS"=>"false", "PASSENGER_DEBUGGER"=>"false", "PASSENGER_SHOW_VERSION_IN_HEADER"=>"true", "PASSENGER_ENVIRONMENT"=>"development", "PASSENGER_SPAWN_METHOD"=>"smart-lv2", "PASSENGER_USER"=>"", "PASSENGER_GROUP"=>"", "PASSENGER_APP_TYPE"=>"rack", "PASSENGER_MIN_INSTANCES"=>"1", "PASSENGER_FRAMEWORK_SPAWNER_IDLE_TIME"=>"-1", "PASSENGER_APP_SPAWNER_IDLE_TIME"=>"-1", "SCGI"=>"1", "QUERY_STRING"=>"", "REQUEST_METHOD"=>"GET", "REQUEST_URI"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"nginx/0.8.52", "REMOTE_ADDR"=>"127.0.0.1", "REMOTE_PORT"=>"55259", "SERVER_ADDR"=>"127.0.0.1", "SERVER_PORT"=>"3000", "SERVER_NAME"=>"_", "HTTP_HOST"=>"localhost:3000", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "HTTP_KEEP_ALIVE"=>"115", "HTTP_CONNECTION"=>"keep-alive", "HTTP_CACHE_CONTROL"=>"max-age=0", "_"=>"_", "PASSENGER_CONNECT_PASSWORD"=>"v0egO2dTV0U54OSfGiCXgsoeYsukA4gFkrQQ8pAgwAk", "rack.version"=>[1, 0], "rack.input"=>#<PhusionPassenger::Utils::RewindableInput:0x74bc60 @io=#<PhusionPassenger::Utils::UnseekableSocket:0x74cf34 @socket=#<UNIXSocket:fd 10>>, @rewindable_io=nil, @unlinked=false>, "rack.errors"=>#<IO:<STDERR>>, "rack.multithread"=>false, "rack.multiprocess"=>true, "rack.run_once"=>false, "rack.url_scheme"=>"http"}
+{"CONTENT_LENGTH"=>"0", "DOCUMENT_ROOT"=>"/Users/dagi3d/www/ruby-watcher/server/public", "SCRIPT_NAME"=>"", "PATH_INFO"=>"/", "PASSENGER_USE_GLOBAL_QUEUE"=>"true", "PASSENGER_FRIENDLY_ERROR_PAGES"=>"true", "PASSENGER_ANALYTICS"=>"false", "PASSENGER_DEBUGGER"=>"false", "PASSENGER_SHOW_VERSION_IN_HEADER"=>"true", "PASSENGER_ENVIRONMENT"=>"development", "PASSENGER_SPAWN_METHOD"=>"smart-lv2", "PASSENGER_USER"=>"", "PASSENGER_GROUP"=>"", "PASSENGER_APP_TYPE"=>"rack", "PASSENGER_MIN_INSTANCES"=>"1", "PASSENGER_FRAMEWORK_SPAWNER_IDLE_TIME"=>"-1", "PASSENGER_APP_SPAWNER_IDLE_TIME"=>"-1", "SCGI"=>"1", "QUERY_STRING"=>"", "REQUEST_METHOD"=>"GET", "REQUEST_URI"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"nginx/0.8.52", "REMOTE_ADDR"=>"127.0.0.1", "REMOTE_PORT"=>"55294", "SERVER_ADDR"=>"127.0.0.1", "SERVER_PORT"=>"3000", "SERVER_NAME"=>"_", "HTTP_HOST"=>"localhost:3000", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "HTTP_KEEP_ALIVE"=>"115", "HTTP_CONNECTION"=>"keep-alive", "HTTP_CACHE_CONTROL"=>"max-age=0", "_"=>"_", "PASSENGER_CONNECT_PASSWORD"=>"bTzbgg0a9eluKlTnZts9i5QsVf1mgaKdGQGIVqo4bkJ", "rack.version"=>[1, 0], "rack.input"=>#<PhusionPassenger::Utils::RewindableInput:0x762d5c @io=#<PhusionPassenger::Utils::UnseekableSocket:0x7642ec @socket=#<UNIXSocket:fd 10>>, @rewindable_io=nil, @unlinked=false>, "rack.errors"=>#<IO:<STDERR>>, "rack.multithread"=>false, "rack.multiprocess"=>true, "rack.run_once"=>false, "rack.url_scheme"=>"http"}
+{"CONTENT_LENGTH"=>"0", "DOCUMENT_ROOT"=>"/Users/dagi3d/www/ruby-watcher/server/public", "SCRIPT_NAME"=>"", "PATH_INFO"=>"/snapshot.jpg", "PASSENGER_USE_GLOBAL_QUEUE"=>"true", "PASSENGER_FRIENDLY_ERROR_PAGES"=>"true", "PASSENGER_ANALYTICS"=>"false", "PASSENGER_DEBUGGER"=>"false", "PASSENGER_SHOW_VERSION_IN_HEADER"=>"true", "PASSENGER_ENVIRONMENT"=>"development", "PASSENGER_SPAWN_METHOD"=>"smart-lv2", "PASSENGER_USER"=>"", "PASSENGER_GROUP"=>"", "PASSENGER_APP_TYPE"=>"rack", "PASSENGER_MIN_INSTANCES"=>"1", "PASSENGER_FRAMEWORK_SPAWNER_IDLE_TIME"=>"-1", "PASSENGER_APP_SPAWNER_IDLE_TIME"=>"-1", "SCGI"=>"1", "QUERY_STRING"=>"r=2010-11-23%2001:33:19%20+0100", "REQUEST_METHOD"=>"GET", "REQUEST_URI"=>"/snapshot.jpg?r=2010-11-23%2001:33:19%20+0100", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"nginx/0.8.52", "REMOTE_ADDR"=>"127.0.0.1", "REMOTE_PORT"=>"55294", "SERVER_ADDR"=>"127.0.0.1", "SERVER_PORT"=>"3000", "SERVER_NAME"=>"_", "HTTP_HOST"=>"localhost:3000", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12", "HTTP_ACCEPT"=>"image/png,image/*;q=0.8,*/*;q=0.5", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "HTTP_KEEP_ALIVE"=>"115", "HTTP_CONNECTION"=>"keep-alive", "HTTP_REFERER"=>"http://localhost:3000/", "_"=>"_", "PASSENGER_CONNECT_PASSWORD"=>"bTzbgg0a9eluKlTnZts9i5QsVf1mgaKdGQGIVqo4bkJ", "rack.version"=>[1, 0], "rack.input"=>#<PhusionPassenger::Utils::RewindableInput:0x7611c8 @io=#<PhusionPassenger::Utils::UnseekableSocket:0x7642ec @socket=#<UNIXSocket:fd 10>>, @rewindable_io=nil, @unlinked=false>, "rack.errors"=>#<IO:<STDERR>>, "rack.multithread"=>false, "rack.multiprocess"=>true, "rack.run_once"=>false, "rack.url_scheme"=>"http"}
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/snapshot.jpg
+/snapshot.jpg
+/snapshot.jpg
+/snapshot.jpg
+/snapshot.jpg
+/snapshot.jpg
+2010/11/23 01:54:12 [error] 24136#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?foo=we HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=24147 thr=398660 file=utils.rb:176 time=2010-11-23 01:54:12.775 ]: *** Exception NameError in application (uninitialized constant Rack::Builder::Watcher) (process 24147, thread #<Thread:0x0c2a88>):
+	from config.ru:16:in `image'
+	from config.ru:25:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+[ pid=24174 thr=398660 file=utils.rb:176 time=2010-11-23 01:55:34.007 ]: *** Exception LoadError in PhusionPassenger::Rack::ApplicationSpawner (no such file to load -- ./lib/watcher/config) (process 24174, thread #<Thread:0x0c2a88>):
+	from /Users/dagi3d/www/ruby-watcher/init.rb:4:in `require'
+	from /Users/dagi3d/www/ruby-watcher/init.rb:4:in `<top (required)>'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from config.ru:19:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:221:in `eval'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:221:in `load_rack_app'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:156:in `block in initialize_server'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:564:in `report_app_init_status'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:153:in `initialize_server'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+2010/11/23 01:57:00 [error] 24193#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?foo=we HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=24203 thr=398660 file=utils.rb:176 time=2010-11-23 01:57:00.214 ]: *** Exception NoMethodError in application (undefined method `[]' for nil:NilClass) (process 24203, thread #<Thread:0x0c2a88>):
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/database.rb:4:in `instance'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:38:in `last'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:49:in `last_capture'
+	from config.ru:16:in `image'
+	from config.ru:25:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+[ pid=24225 thr=398660 file=utils.rb:176 time=2010-11-23 01:58:03.472 ]: *** Exception Errno::ENOENT in PhusionPassenger::Rack::ApplicationSpawner (No such file or directory - config.yml) (process 24225, thread #<Thread:0x0c2a88>):
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/config.rb:16:in `initialize'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/config.rb:16:in `new'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/config.rb:16:in `load'
+	from /Users/dagi3d/www/ruby-watcher/init.rb:11:in `<top (required)>'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from config.ru:19:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:221:in `eval'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:221:in `load_rack_app'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:156:in `block in initialize_server'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:564:in `report_app_init_status'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:153:in `initialize_server'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+[ pid=24245 thr=398660 file=utils.rb:176 time=2010-11-23 01:58:34.525 ]: *** Exception SyntaxError in PhusionPassenger::Rack::ApplicationSpawner (/Users/dagi3d/www/ruby-watcher/init.rb:11: syntax error, unexpected $end, expecting ')') (process 24245, thread #<Thread:0x0c2a88>):
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from config.ru:19:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/builder.rb:46:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/builder.rb:46:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:221:in `eval'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:221:in `load_rack_app'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:156:in `block in initialize_server'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:564:in `report_app_init_status'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:153:in `initialize_server'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:204:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:04:40 [error] 24296#0: *5 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?foo=we HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=24401 thr=398660 file=utils.rb:176 time=2010-11-23 02:04:40.101 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24401, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:04:41 [error] 24296#0: *5 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?r=1290474281 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000", referrer: "http://localhost:3000/"
+[ pid=24404 thr=398660 file=utils.rb:176 time=2010-11-23 02:04:41.074 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24404, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:04:51 [error] 24296#0: *5 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?r=1290474291 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000", referrer: "http://localhost:3000/"
+[ pid=24408 thr=398660 file=utils.rb:176 time=2010-11-23 02:04:51.159 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24408, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[ pid=24413 thr=398660 file=utils.rb:176 time=2010-11-23 02:05:01.247 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24413, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+2010/11/23 02:05:01 [error] 24296#0: *5 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?r=1290474301 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000", referrer: "http://localhost:3000/"
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:05:12 [error] 24427#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?foo=we HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=24438 thr=398660 file=utils.rb:176 time=2010-11-23 02:05:12.472 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24438, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:05:12 [error] 24427#0: *6 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?r=1290474312 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000", referrer: "http://localhost:3000/"
+[ pid=24441 thr=398660 file=utils.rb:176 time=2010-11-23 02:05:12.499 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24441, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:05:14 [error] 24427#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?foo=we HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
+[ pid=24444 thr=398660 file=utils.rb:176 time=2010-11-23 02:05:14.184 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24444, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:05:17 [error] 24427#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?r=1290474317 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000", referrer: "http://localhost:3000/"
+[ pid=24447 thr=398660 file=utils.rb:176 time=2010-11-23 02:05:17.430 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24447, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:05:18 [error] 24427#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?r=1290474318 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000", referrer: "http://localhost:3000/"
+[ pid=24449 thr=398660 file=utils.rb:176 time=2010-11-23 02:05:18.189 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24449, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:05:22 [error] 24427#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?r=1290474322 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000", referrer: "http://localhost:3000/"
+[ pid=24455 thr=398660 file=utils.rb:176 time=2010-11-23 02:05:22.587 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24455, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:05:28 [error] 24427#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?r=1290474328 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000", referrer: "http://localhost:3000/"
+[ pid=24459 thr=398660 file=utils.rb:176 time=2010-11-23 02:05:28.302 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24459, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+2010/11/23 02:05:32 [error] 24427#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /snapshot.jpg?r=1290474332 HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000", referrer: "http://localhost:3000/"
+[ pid=24465 thr=398660 file=utils.rb:176 time=2010-11-23 02:05:32.667 ]: *** Exception RestClient::ResourceNotFound in application (404 Resource Not Found: {"error":"not_found","reason":"Document is missing attachment"}
+) (process 24465, thread #<Thread:0x0c2a88>):
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/abstract_response.rb:48:in `return!'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:220:in `process_result'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:169:in `block in transmit'
+	from /usr/local/rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/net/http.rb:627:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:166:in `transmit'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:60:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient/request.rb:31:in `execute'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/rest-client-1.6.1/lib/restclient.rb:68:in `get'
+	from /usr/local/rvm/gems/ruby-1.9.2-head/gems/couchrest-1.0.1/lib/couchrest/database.rb:111:in `fetch_attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:45:in `attachment'
+	from /Users/dagi3d/www/ruby-watcher/lib/watcher/capture.rb:50:in `last_capture'
+	from config.ru:18:in `image'
+	from config.ru:27:in `block (2 levels) in <main>'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `call'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+[
+    [0] {
+           "id" => "1290474415",
+          "key" => "1290474415",
+        "value" => {
+            "rev" => "2-eacbbf4b00f8c56ebfa7c4eebb833907"
+        },
+          "doc" => {
+                     "_id" => "1290474415",
+                    "_rev" => "2-eacbbf4b00f8c56ebfa7c4eebb833907",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 6,
+                  "sec" => 55
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25289,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474415",
+          "key" => "1290474415",
+        "value" => {
+            "rev" => "2-eacbbf4b00f8c56ebfa7c4eebb833907"
+        },
+          "doc" => {
+                     "_id" => "1290474415",
+                    "_rev" => "2-eacbbf4b00f8c56ebfa7c4eebb833907",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 6,
+                  "sec" => 55
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25289,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474415",
+          "key" => "1290474415",
+        "value" => {
+            "rev" => "2-eacbbf4b00f8c56ebfa7c4eebb833907"
+        },
+          "doc" => {
+                     "_id" => "1290474415",
+                    "_rev" => "2-eacbbf4b00f8c56ebfa7c4eebb833907",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 6,
+                  "sec" => 55
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25289,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474429",
+          "key" => "1290474429",
+        "value" => {
+            "rev" => "2-17fbead278d840968a82473b59f10a51"
+        },
+          "doc" => {
+                     "_id" => "1290474429",
+                    "_rev" => "2-17fbead278d840968a82473b59f10a51",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 7,
+                  "sec" => 9
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25777,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474443",
+          "key" => "1290474443",
+        "value" => {
+            "rev" => "2-139f76459d42a1eb6707b245e4be9c2e"
+        },
+          "doc" => {
+                     "_id" => "1290474443",
+                    "_rev" => "2-139f76459d42a1eb6707b245e4be9c2e",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 7,
+                  "sec" => 23
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 31846,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474443",
+          "key" => "1290474443",
+        "value" => {
+            "rev" => "2-139f76459d42a1eb6707b245e4be9c2e"
+        },
+          "doc" => {
+                     "_id" => "1290474443",
+                    "_rev" => "2-139f76459d42a1eb6707b245e4be9c2e",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 7,
+                  "sec" => 23
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 31846,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474458",
+          "key" => "1290474458",
+        "value" => {
+            "rev" => "2-98a870de4a1f249ef7170dd24e529473"
+        },
+          "doc" => {
+                     "_id" => "1290474458",
+                    "_rev" => "2-98a870de4a1f249ef7170dd24e529473",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 7,
+                  "sec" => 38
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 28519,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474473",
+          "key" => "1290474473",
+        "value" => {
+            "rev" => "2-2986a5cc34aad7b24b379386d24f9717"
+        },
+          "doc" => {
+                     "_id" => "1290474473",
+                    "_rev" => "2-2986a5cc34aad7b24b379386d24f9717",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 7,
+                  "sec" => 53
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 29685,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474487",
+          "key" => "1290474487",
+        "value" => {
+            "rev" => "2-5fda21758d91334b6dc3923afcf67a44"
+        },
+          "doc" => {
+                     "_id" => "1290474487",
+                    "_rev" => "2-5fda21758d91334b6dc3923afcf67a44",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 8,
+                  "sec" => 7
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 27846,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474487",
+          "key" => "1290474487",
+        "value" => {
+            "rev" => "2-5fda21758d91334b6dc3923afcf67a44"
+        },
+          "doc" => {
+                     "_id" => "1290474487",
+                    "_rev" => "2-5fda21758d91334b6dc3923afcf67a44",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 8,
+                  "sec" => 7
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 27846,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474501",
+          "key" => "1290474501",
+        "value" => {
+            "rev" => "2-23cedaf2ec1e1493fc96f0c2e4a7c5eb"
+        },
+          "doc" => {
+                     "_id" => "1290474501",
+                    "_rev" => "2-23cedaf2ec1e1493fc96f0c2e4a7c5eb",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 8,
+                  "sec" => 21
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 27294,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474517",
+          "key" => "1290474517",
+        "value" => {
+            "rev" => "2-cfcf82ea89e327af0e3538d616af6b93"
+        },
+          "doc" => {
+                     "_id" => "1290474517",
+                    "_rev" => "2-cfcf82ea89e327af0e3538d616af6b93",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 8,
+                  "sec" => 37
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25758,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474517",
+          "key" => "1290474517",
+        "value" => {
+            "rev" => "2-cfcf82ea89e327af0e3538d616af6b93"
+        },
+          "doc" => {
+                     "_id" => "1290474517",
+                    "_rev" => "2-cfcf82ea89e327af0e3538d616af6b93",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 8,
+                  "sec" => 37
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25758,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474531",
+          "key" => "1290474531",
+        "value" => {
+            "rev" => "2-05048678c3ba71bcc89c8a7c094cf158"
+        },
+          "doc" => {
+                     "_id" => "1290474531",
+                    "_rev" => "2-05048678c3ba71bcc89c8a7c094cf158",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 8,
+                  "sec" => 51
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 26254,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474546",
+          "key" => "1290474546",
+        "value" => {
+            "rev" => "2-6e50425f5aaf665da11167df267f2def"
+        },
+          "doc" => {
+                     "_id" => "1290474546",
+                    "_rev" => "2-6e50425f5aaf665da11167df267f2def",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 9,
+                  "sec" => 6
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 26438,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474546",
+          "key" => "1290474546",
+        "value" => {
+            "rev" => "2-6e50425f5aaf665da11167df267f2def"
+        },
+          "doc" => {
+                     "_id" => "1290474546",
+                    "_rev" => "2-6e50425f5aaf665da11167df267f2def",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 9,
+                  "sec" => 6
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 26438,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474546",
+          "key" => "1290474546",
+        "value" => {
+            "rev" => "2-6e50425f5aaf665da11167df267f2def"
+        },
+          "doc" => {
+                     "_id" => "1290474546",
+                    "_rev" => "2-6e50425f5aaf665da11167df267f2def",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 9,
+                  "sec" => 6
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 26438,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474560",
+          "key" => "1290474560",
+        "value" => {
+            "rev" => "2-56ff7ee065b1768655ecdbdb25f02d96"
+        },
+          "doc" => {
+                     "_id" => "1290474560",
+                    "_rev" => "2-56ff7ee065b1768655ecdbdb25f02d96",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 9,
+                  "sec" => 20
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25729,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474560",
+          "key" => "1290474560",
+        "value" => {
+            "rev" => "2-56ff7ee065b1768655ecdbdb25f02d96"
+        },
+          "doc" => {
+                     "_id" => "1290474560",
+                    "_rev" => "2-56ff7ee065b1768655ecdbdb25f02d96",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 9,
+                  "sec" => 20
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25729,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474575",
+          "key" => "1290474575",
+        "value" => {
+            "rev" => "2-fc2a07306631c192f014dce4238e403c"
+        },
+          "doc" => {
+                     "_id" => "1290474575",
+                    "_rev" => "2-fc2a07306631c192f014dce4238e403c",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 9,
+                  "sec" => 35
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25920,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474575",
+          "key" => "1290474575",
+        "value" => {
+            "rev" => "2-fc2a07306631c192f014dce4238e403c"
+        },
+          "doc" => {
+                     "_id" => "1290474575",
+                    "_rev" => "2-fc2a07306631c192f014dce4238e403c",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 9,
+                  "sec" => 35
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25920,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474575",
+          "key" => "1290474575",
+        "value" => {
+            "rev" => "2-fc2a07306631c192f014dce4238e403c"
+        },
+          "doc" => {
+                     "_id" => "1290474575",
+                    "_rev" => "2-fc2a07306631c192f014dce4238e403c",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 9,
+                  "sec" => 35
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25920,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474589",
+          "key" => "1290474589",
+        "value" => {
+            "rev" => "2-855964137626a8e9eef052eaee8fac81"
+        },
+          "doc" => {
+                     "_id" => "1290474589",
+                    "_rev" => "2-855964137626a8e9eef052eaee8fac81",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 9,
+                  "sec" => 49
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 26361,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[
+    [0] {
+           "id" => "1290474604",
+          "key" => "1290474604",
+        "value" => {
+            "rev" => "2-fe539b62458b73f0b3bb3ae0e1043868"
+        },
+          "doc" => {
+                     "_id" => "1290474604",
+                    "_rev" => "2-fe539b62458b73f0b3bb3ae0e1043868",
+                "doc_type" => "capture",
+                  "output" => "",
+              "created_at" => {
+                 "year" => 2010,
+                "month" => 11,
+                  "day" => 23,
+                 "hour" => 2,
+                  "min" => 10,
+                  "sec" => 4
+            },
+            "_attachments" => {
+                "pic" => {
+                    "content_type" => "image/jpg",
+                          "revpos" => 2,
+                          "length" => 25381,
+                            "stub" => true
+                }
+            }
+        }
+    }
+]
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+CouchRest::Database#fetch_attachment will eventually require a doc as the first argument, not a doc.id
+[ pid=24582 thr=398660 file=utils.rb:176 time=2010-11-23 02:10:41.523 ]: *** Exception NoMethodError in application (undefined method `each' for nil:NilClass) (process 24582, thread #<Thread:0x0c2a88>):
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/request_handler.rb:106:in `process_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:205:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:170:in `block in handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:165:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/rack/application_spawner.rb:128:in `start'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+	from <internal:prelude>:10:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.0-i386-ruby1.9.2-x86_64-macosx-10.5/support/helper-scripts/passenger-spawn-server:99:in `<main>'
+2010/11/23 02:10:41 [error] 24578#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /history HTTP/1.1", upstream: "passenger:unix:/passenger_helper_server:", host: "localhost:3000"
